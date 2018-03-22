@@ -1,0 +1,14 @@
+
+
+{% block body %}
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"> Posts List </h3>
+    </div>
+    <ul class="list-group">
+    {% for post in posts %}
+        <li class="list-group-item">{{post.title }}</li>
+        {% endfor %}
+    </ul>
+    </div>
+{% endblock %}
